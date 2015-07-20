@@ -122,7 +122,7 @@
       <item name="Imprint" href="http://wcm.io/imprint.html" />
     </menu>
     <menu name="Categories" inherit="top">
-      <item name="CONGA" href="http://wcm.io/conga/"/>
+      <item name="CONGA - CONfiguration GenerAtor" href="http://devops.wcm.io/conga/"/>
     </menu>
     <menu name="Contribute" inherit="top">
       <item name="Contribute" href="http://wcm.io/contribute.html" />
