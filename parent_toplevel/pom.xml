@@ -44,6 +44,11 @@
     <tag>HEAD</tag>
   </scm>
 
+  <properties>
+    <build.compiler.source>1.8</build.compiler.source>
+    <build.compiler.target>1.8</build.compiler.target>
+  </properties>
+
   <inceptionYear>2015</inceptionYear>
 
   <organization>
@@ -75,6 +80,61 @@
       <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
     </license>
   </licenses>
+  
+  <dependencies>
+
+    <!-- Testing -->
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.mockito</groupId>
+      <artifactId>mockito-core</artifactId>
+      <scope>test</scope>
+    </dependency>
+
+  </dependencies>  
+  <dependencyManagement>
+    <dependencies>
+    
+      <!-- Logging -->
+      <dependency>
+        <groupId>org.slf4j</groupId>
+        <artifactId>slf4j-api</artifactId>
+        <version>1.7.12</version>
+      </dependency>
+      <dependency>
+        <groupId>org.slf4j</groupId>
+        <artifactId>slf4j-log4j12</artifactId>
+        <version>1.7.12</version>
+      </dependency>
+      <dependency>
+        <groupId>org.slf4j</groupId>
+        <artifactId>slf4j-simple</artifactId>
+        <version>1.7.12</version>
+      </dependency>
+      <dependency>
+        <groupId>log4j</groupId>
+        <artifactId>log4j</artifactId>
+        <version>1.2.17</version>
+      </dependency>
+
+      <!-- Testing -->
+      <dependency>
+        <groupId>junit</groupId>
+        <artifactId>junit</artifactId>
+        <version>4.12</version>
+      </dependency>
+      <dependency>
+        <groupId>org.mockito</groupId>
+        <artifactId>mockito-core</artifactId>
+        <version>2.0.13-beta</version>
+      </dependency>
+
+    </dependencies>
+  </dependencyManagement>
 
   <build>
     <plugins>
@@ -91,6 +151,21 @@
             </goals>
           </execution>
         </executions>
+      </plugin>
+
+      <!-- GitFlow settings only for this POM -->
+      <plugin>
+        <groupId>external.atlassian.jgitflow</groupId>
+        <artifactId>jgitflow-maven-plugin</artifactId>
+        <inherited>false</inherited>
+        <configuration>
+          <!-- Prefix release numbers with artifactId for GIT repo with more than one released artifact -->
+          <flowInitContext>
+            <releaseBranchPrefix>release/${project.artifactId}-</releaseBranchPrefix>
+            <hotfixBranchPrefix>hotfix/${project.artifactId}-</hotfixBranchPrefix>
+            <versionTagPrefix>${project.artifactId}-</versionTagPrefix>
+          </flowInitContext>
+        </configuration>
       </plugin>
 
     </plugins>
@@ -117,19 +192,6 @@
           <artifactId>maven-javadoc-plugin</artifactId>
           <configuration>
             <excludePackageNames>*.impl</excludePackageNames>
-          </configuration>
-        </plugin>
-
-        <plugin>
-          <groupId>external.atlassian.jgitflow</groupId>
-          <artifactId>jgitflow-maven-plugin</artifactId>
-          <configuration>
-            <!-- Prefix release numbers with artifactId for GIT repo with more than one released artifact -->
-            <flowInitContext>
-              <releaseBranchPrefix>release/${project.artifactId}-</releaseBranchPrefix>
-              <hotfixBranchPrefix>hotfix/${project.artifactId}-</hotfixBranchPrefix>
-              <versionTagPrefix>${project.artifactId}-</versionTagPrefix>
-            </flowInitContext>
           </configuration>
         </plugin>
 
