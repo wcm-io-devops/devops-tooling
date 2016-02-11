@@ -13,6 +13,7 @@ wcm.io DevOps is an Open Source project which provides tools for configuration m
 * [AEM Manager for Windows](https://github.com/wcm-io-devops/aem-manager)
 * [AEM Manager for Mac OS X](https://github.com/wcm-io-devops/aem-manager-osx)
 * [Maven NodeJS Proxy](https://github.com/wcm-io-devops/maven-nodejs-proxy)
+* [Maven Eclipse Plugin (Fork)](https://github.com/wcm-io-devops/maven-eclipse-plugin)
 
 
 ### Subprojects
