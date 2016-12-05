@@ -25,7 +25,7 @@
 
     <release version="1.0.4" date="not released">
       <action type="update" dev="sseifert">
-        Update to global-parent 12, update dependencies.
+        Update to global-parent 13, update dependencies.
       </action>
       <action type="update" dev="sseifert" issue="DOXIASITETOOLS-168">
         Replace reflow-velocity-tools to fix problem with site generation.
