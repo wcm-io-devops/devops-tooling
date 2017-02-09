@@ -23,6 +23,15 @@
     xsi:schemaLocation="http://maven.apache.org/changes/1.0.0 http://maven.apache.org/plugins/maven-changes-plugin/xsd/changes-1.0.0.xsd">
   <body>
 
+    <release version="1.0.4" date="2017-02-09">
+      <action type="update" dev="sseifert">
+        Update to global-parent 13, update dependencies.
+      </action>
+      <action type="update" dev="sseifert" issue="DOXIASITETOOLS-168">
+        Replace reflow-velocity-tools to fix problem with site generation.
+      </action>
+    </release>
+
     <release version="1.0.2" date="2015-11-12">
       <action type="update" dev="sseifert">
         Update to global-parent 10, switch from cobertura to jacoco.
