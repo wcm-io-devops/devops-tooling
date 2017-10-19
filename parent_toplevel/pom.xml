@@ -31,7 +31,7 @@
 
   <groupId>io.wcm.devops</groupId>
   <artifactId>io.wcm.devops.parent_toplevel</artifactId>
-  <version>1.0.7-SNAPSHOT</version>
+  <version>1.0.8-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <name>Toplevel Parent</name>
@@ -87,7 +87,7 @@
     <site.url.module.prefix>tooling/parent_toplevel</site.url.module.prefix>
     <site.url>http://devops.wcm.io</site.url>
     <site.deploy.id>ssh-wcm.io</site.deploy.id>
-    <site.deploy.url></site.deploy.url>
+    <site.deploy.url />
 
   </properties>
 
