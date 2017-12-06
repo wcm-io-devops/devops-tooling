@@ -17,6 +17,6 @@ Each Ansible roles is hosted in it's own repository on GitHub with documentation
 
 [ansible]: https://www.ansible.com/
 [conga]: http://devops.wcm.io/conga
-[github-ansible-roles]: https://github.com/wcm-io-devops?q=ansible-%20NOT%20conga-ansible-plugin
+[github-ansible-roles]: https://github.com/wcm-io-devops?q=topic%3Aansible-role
 [aem-ansible-adaptto-2017]: https://adapt.to/2017/en/schedule/automate-aem-deployment-with-ansible-and-wcm-io-conga.html
 [aem-ansible-adaptto-2017-demo]: https://github.com/adaptto/2017-automate-aem-deployment-ansible-conga
