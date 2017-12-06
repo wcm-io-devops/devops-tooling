@@ -6,7 +6,7 @@ The Ansible roles are optimized to be used together with [CONGA][conga], but som
 
 For an in-depth overview see this talk:
 
-* [Automate AEM Deployment with Ansible and wcm.io CONGA][aem-ansible-adaptto-2017] (adaptTo() 2017)
+* [Automate AEM Deployment with Ansible and wcm.io CONGA][aem-ansible-adaptto-2017] - adaptTo() 2017
 * [Demo project][aem-ansible-adaptto-2017-demo]
 
 
