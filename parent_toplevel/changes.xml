@@ -28,7 +28,7 @@
         Update reflow-maven-skin.
       </action>
       <action type="update" dev="sseifert">
-        Update to global-parent 18, update mockito.
+        Update to global-parent 19, update mockito.
       </action>
     </release>
 
