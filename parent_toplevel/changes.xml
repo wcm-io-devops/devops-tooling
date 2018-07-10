@@ -27,6 +27,9 @@
       <action type="update" dev="sseifert">
         Switch to JUnit 5 as default test framework.
       </action>
+    </release>
+
+    <release version="1.0.10" date="2018-01-15">
       <action type="update" dev="sseifert">
         Update reflow-maven-skin.
       </action>
