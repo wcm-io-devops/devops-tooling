@@ -6,10 +6,10 @@ wcm.io DevOps is an Open Source project which provides tools for configuration m
 ### Modules
 
 * [CONGA - CONfiguration GenerAtor](conga/)
-  * [CONGA Plugin for Apache Sling](conga/plugins/sling)
-  * [CONGA Plugin for Adobe Experience Manager (AEM)](conga/plugins/aem)
-  * [CONGA Plugin for Ansible](conga/plugins/ansible)
-  * [CONGA Definitions for Adobe Experience Manager (AEM)](conga/definitions/aem)
+    * [CONGA Plugin for Apache Sling](conga/plugins/sling)
+    * [CONGA Plugin for Adobe Experience Manager (AEM)](conga/plugins/aem)
+    * [CONGA Plugin for Ansible](conga/plugins/ansible)
+    * [CONGA Definitions for Adobe Experience Manager (AEM)](conga/definitions/aem)
 
 
 ### Tools

@@ -1,1 +1,1 @@
-Redirect 301 ansible.html ansible-aem/
+Redirect 301 /ansible.html http://devops.wcm.io/ansible-aem/
