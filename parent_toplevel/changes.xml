@@ -28,7 +28,7 @@
         Update to reflow-maven-skin 1.0.6.
       </action>
       <action type="update" dev="sseifert">
-        Update to global-parent 24.
+        Update to global-parent 25.
       </action>
       <action type="update" dev="sseifert">
         Update dependencies.
