@@ -23,12 +23,30 @@
     xsi:schemaLocation="http://maven.apache.org/changes/1.0.0 http://maven.apache.org/plugins/maven-changes-plugin/xsd/changes-1.0.0.xsd">
   <body>
 
+    <release version="1.1.2" date="2019-03-14">
+      <action type="update" dev="sseifert">
+        Update to global-parent 25.
+      </action>
+      <action type="update" dev="sseifert">
+        Update to reflow-maven-skin 1.0.6.
+      </action>
+      <action type="update" dev="sseifert">
+        Allow HTML markup in CDATA sections in changes reports.
+      </action>
+      <action type="update" dev="sseifert">
+        Update dependencies.
+      </action>
+    </release>
+
     <release version="1.1.0" date="2018-07-11">
       <action type="update" dev="sseifert">
         Switch to JUnit 5 as default test framework.
       </action>
       <action type="update" dev="sseifert">
         Update to global-parent 20.
+      </action>
+      <action type="update" dev="sseifert">
+        Update to reflow-maven-skin 1.0.6.
       </action>
       <action type="update" dev="sseifert">
         Update dependencies.

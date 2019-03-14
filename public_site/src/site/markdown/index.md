@@ -6,19 +6,23 @@ wcm.io DevOps is an Open Source project which provides tools for configuration m
 ### Modules
 
 * [CONGA - CONfiguration GenerAtor](conga/)
+    * [CONGA Plugin for Apache Sling](conga/plugins/sling)
+    * [CONGA Plugin for Adobe Experience Manager (AEM)](conga/plugins/aem)
+    * [CONGA Plugin for Ansible](conga/plugins/ansible)
+    * [CONGA Definitions for Adobe Experience Manager (AEM)](conga/definitions/aem)
 
 
 ### Tools
 
 ##### CI/CD and IT Automation
 
-* [Ansible Automation for AEM](ansible.html)
+* [Ansible Automation for AEM](ansible-aem/)
 * [Jenkins Pipeline Library for CI/CD](https://github.com/wcm-io-devops/jenkins-pipeline-library)
 
 ##### Maven
 
 * [Maven NodeJS Proxy](https://github.com/wcm-io-devops/maven-nodejs-proxy)
-* [Maven Eclipse Plugin (Fork)](https://github.com/wcm-io-devops/maven-eclipse-plugin)
+* [Eclipse Maven Plugin](https://github.com/wcm-io-devops/maven-eclipse-plugin)
 
 ##### UI Tools
 
