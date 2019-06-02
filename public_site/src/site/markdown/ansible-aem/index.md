@@ -28,7 +28,7 @@ The Ansible roles are published on Ansibe Galaxy:
 
 [ansible]: https://www.ansible.com/
 [ansible-debugging]: ansible-debugging.html
-[conga]: http://devops.wcm.io/conga
+[conga]: https://devops.wcm.io/conga
 [aem-configmgmt-archetype]: http://wcm.io/tooling/maven/archetypes/aem-confmgmt/
 [ansible-galaxy-roles]: https://galaxy.ansible.com/wcm_io_devops
 [github-ansible-roles]: https://github.com/wcm-io-devops?q=topic%3Aansible-role

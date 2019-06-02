@@ -129,4 +129,4 @@ When you are using Ansible 2.5+ you can use the Playbook Debugger<br/>
 https://docs.ansible.com/ansible/2.5/user_guide/playbooks_debugger.html
 
 
-[ansible-aem]: http://devops.wcm.io/ansible-aem/
+[ansible-aem]: https://devops.wcm.io/ansible-aem/
