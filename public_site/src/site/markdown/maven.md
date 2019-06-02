@@ -40,7 +40,7 @@ This repository is hosted on wcm.io and provides intermediate releses with revis
 ```xml
 <repository>
   <id>wcm-io-apache-intermediate-release</id>
-  <url>http://wcm.io/maven/repositories/apache-intermediate-release</url>
+  <url>https://wcm.io/maven/repositories/apache-intermediate-release</url>
   <layout>default</layout>
   <releases>
     <enabled>true</enabled>
@@ -53,7 +53,7 @@ This repository is hosted on wcm.io and provides intermediate releses with revis
 
 <pluginRepository>
   <id>wcm-io-apache-intermediate-release</id>
-  <url>http://wcm.io/maven/repositories/apache-intermediate-release</url>
+  <url>https://wcm.io/maven/repositories/apache-intermediate-release</url>
   <releases>
     <enabled>true</enabled>
     <updatePolicy>never</updatePolicy>

@@ -32,4 +32,4 @@ wcm.io DevOps is an Open Source project which provides tools for configuration m
 
 ### Subprojects
 
-List of [Subprojects](http://wcm.io/subprojects.html) of wcm.io.
+List of [Subprojects](https://wcm.io/subprojects.html) of wcm.io.
