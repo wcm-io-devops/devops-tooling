@@ -25,8 +25,8 @@
   xsi:schemaLocation="http://maven.apache.org/DECORATION/1.3.0 http://maven.apache.org/xsd/decoration-1.3.0.xsd">
 
   <bannerLeft>
-    <name><![CDATA[<img src="http://wcm.io/images/favicon-16@3x.png"/> wcm.io DevOps]]></name>
-    <href>http://devops.wcm.io</href>
+    <name><![CDATA[<img src="https://wcm.io/images/favicon-16@3x.png"/> wcm.io DevOps]]></name>
+    <href>https://devops.wcm.io</href>
   </bannerLeft>
 
   <publishDate position="bottom" format="yyyy-MM-dd" />
@@ -35,7 +35,7 @@
   <skin>
     <groupId>io.wcm.maven.skins</groupId>
     <artifactId>reflow-maven-skin</artifactId>
-    <version>1.0.6</version>
+    <version>1.0.8</version>
   </skin>
   <custom>
     <reflowSkin>
@@ -43,12 +43,12 @@
       <protocolRelativeURLs>false</protocolRelativeURLs>
       <smoothScroll>true</smoothScroll>
       <theme>default</theme>
-      <absoluteResourceURL>http://devops.wcm.io</absoluteResourceURL>
+      <absoluteResourceURL>https://devops.wcm.io</absoluteResourceURL>
       <skinAttribution>false</skinAttribution>
       <brand>
         <!-- Brand text in top-left part of the site -->
         <name>wcm.io DevOps</name>
-        <href>http://devops.wcm.io</href>
+        <href>https://devops.wcm.io</href>
       </brand>
       <slogan>Tools for Configuration Management and Deployment</slogan>
       <titleTemplate>%2$s | %1$s</titleTemplate>
@@ -107,26 +107,26 @@
     </links>
 
     <breadcrumbs>
-      <item name="wcm.io DevOps" href="http://devops.wcm.io" />
+      <item name="wcm.io DevOps" href="https://devops.wcm.io" />
     </breadcrumbs>
 
     <menu name="Main" inherit="top">
-      <item name="Home" href="http://devops.wcm.io" />
-      <item name="Platforms" href="http://devops.wcm.io/platforms.html" />
-      <item name="Maven Repositories" href="http://devops.wcm.io/maven.html" />
+      <item name="Home" href="https://devops.wcm.io" />
+      <item name="Platforms" href="https://devops.wcm.io/platforms.html" />
+      <item name="Maven Repositories" href="https://devops.wcm.io/maven.html" />
       <item name="GitHub project" href="http://github.com/wcm-io-devops" />
-      <item name="Subprojects" href="http://wcm.io/subprojects.html" />
-      <item name="License" href="http://devops.wcm.io/license.html" />
-      <item name="Imprint" href="http://wcm.io/imprint.html" />
+      <item name="Subprojects" href="https://wcm.io/subprojects.html" />
+      <item name="License" href="https://devops.wcm.io/license.html" />
+      <item name="Imprint" href="https://wcm.io/imprint.html" />
     </menu>
     <menu name="Categories" inherit="top">
-      <item name="CONGA - CONfiguration GenerAtor" href="http://devops.wcm.io/conga/"/>
+      <item name="CONGA - CONfiguration GenerAtor" href="https://devops.wcm.io/conga/"/>
     </menu>
     <menu name="Contribute" inherit="top">
-      <item name="Contribute" href="http://wcm.io/contribute.html" />
+      <item name="Contribute" href="https://wcm.io/contribute.html" />
       <item name="Issues" href="https://wcm-io.atlassian.net" />
       <item name="Wiki" href="https://wcm-io.atlassian.net/wiki/" />
-      <item name="Mailing Lists" href="http://wcm.io/mailing-lists.html" />
+      <item name="Mailing Lists" href="https://wcm.io/mailing-lists.html" />
       <item name="Continuous Integration" href="https://travis-ci.org/wcm-io-devops" />
       <item name="Fork on GitHub" href="http://github.com/wcm-io-devops" />
     </menu>
