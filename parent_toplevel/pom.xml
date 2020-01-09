@@ -25,13 +25,13 @@
   <parent>
     <groupId>io.wcm.maven</groupId>
     <artifactId>io.wcm.maven.global-parent</artifactId>
-    <version>26</version>
+    <version>30</version>
     <relativePath />
   </parent>
 
   <groupId>io.wcm.devops</groupId>
   <artifactId>io.wcm.devops.parent_toplevel</artifactId>
-  <version>1.1.6</version>
+  <version>1.2.0</version>
   <packaging>pom</packaging>
 
   <name>Toplevel Parent</name>
@@ -92,6 +92,20 @@
   </properties>
 
   <dependencies>
+    
+    <!-- Recommended global dependency for nullability annotations -->
+    <dependency>
+      <groupId>org.jetbrains</groupId>
+      <artifactId>annotations</artifactId>
+      <scope>provided</scope>
+    </dependency>
+
+    <!-- Spotbugs annotations -->
+    <dependency>
+      <groupId>io.wcm.tooling.spotbugs</groupId>
+      <artifactId>io.wcm.tooling.spotbugs.annotations</artifactId>
+      <scope>provided</scope>
+    </dependency>
 
     <!-- Testing -->
     <dependency>
@@ -111,17 +125,7 @@
     </dependency>
 		<dependency>
 			<groupId>org.junit.jupiter</groupId>
-			<artifactId>junit-jupiter-api</artifactId>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.junit.jupiter</groupId>
-			<artifactId>junit-jupiter-params</artifactId>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.junit.jupiter</groupId>
-			<artifactId>junit-jupiter-engine</artifactId>
+			<artifactId>junit-jupiter</artifactId>
 			<scope>test</scope>
 		</dependency>
 
@@ -160,19 +164,18 @@
       <dependency>
         <groupId>org.mockito</groupId>
         <artifactId>mockito-core</artifactId>
-        <version>2.25.0</version>
+        <version>3.2.4</version>
       </dependency>
       <dependency>
         <groupId>org.mockito</groupId>
         <artifactId>mockito-junit-jupiter</artifactId>
-        <version>2.25.0</version>
+        <version>3.2.4</version>
       </dependency>
       <!-- Import all JUnit 5 dependencies -->
       <dependency>
         <groupId>org.junit</groupId>
         <artifactId>junit-bom</artifactId>
-        <!-- Stick with JUnit 5.3.2 until Eclipse Inifinittest plugin supports newer versions -->
-        <version>5.3.2</version>
+        <version>5.5.2</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
