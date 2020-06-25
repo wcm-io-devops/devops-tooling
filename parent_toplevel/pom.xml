@@ -92,7 +92,7 @@
   </properties>
 
   <dependencies>
-    
+
     <!-- Recommended global dependency for nullability annotations -->
     <dependency>
       <groupId>org.jetbrains</groupId>
@@ -123,11 +123,11 @@
       <artifactId>mockito-junit-jupiter</artifactId>
       <scope>test</scope>
     </dependency>
-		<dependency>
-			<groupId>org.junit.jupiter</groupId>
-			<artifactId>junit-jupiter</artifactId>
-			<scope>test</scope>
-		</dependency>
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter</artifactId>
+      <scope>test</scope>
+    </dependency>
 
   </dependencies>
   <dependencyManagement>

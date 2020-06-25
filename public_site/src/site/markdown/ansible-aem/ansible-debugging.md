@@ -25,7 +25,7 @@ ansible-playbook playbook-setup-prod.yml | tee ansible.log
 
 ### Use \-\-skip-tags
 
-If you want to speed up debugging and want to skip the tasks/roles that are working use the parameter 
+If you want to speed up debugging and want to skip the tasks/roles that are working use the parameter
 
 ```
 --skip-tags aem-cms,aem-dispatcher
@@ -104,7 +104,7 @@ _Example: Output content of conga_config and continue_
     msg:
       - conga_config
       - "{{ conga_config }}"
- 
+
 - fail:
     msg: do not continue
 ```
