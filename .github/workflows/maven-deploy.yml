@@ -3,13 +3,16 @@
 name: Deploy
 
 on:
-  push:
-    branches:
-      - develop
+  workflow_run:
+    workflows: [ "Build" ]
+    types:
+      - completed
   workflow_dispatch:
 
 jobs:
   build:
+    # run when triggered by workflow_dispatch, otherwise only run when Build was successful
+    if: ${{ github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success' }}
 
     runs-on: ubuntu-latest
 
