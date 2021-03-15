@@ -35,7 +35,7 @@
   <skin>
     <groupId>io.wcm.maven.skins</groupId>
     <artifactId>reflow-maven-skin</artifactId>
-    <version>1.0.12</version>
+    <version>1.1.0</version>
   </skin>
   <custom>
     <reflowSkin>
@@ -119,6 +119,7 @@
       <item name="License" href="https://devops.wcm.io/license.html" />
       <item name="Commercial Support" href="https://wcm.io/commercial-support.html" />
       <item name="Imprint" href="https://wcm.io/imprint.html" />
+      <item name="Privacy Policy" href="https://wcm.io/privacy.html" />
     </menu>
     <menu name="Categories" inherit="top">
       <item name="CONGA - CONfiguration GenerAtor" href="https://devops.wcm.io/conga/"/>
@@ -128,7 +129,6 @@
       <item name="Issues" href="https://wcm-io.atlassian.net" />
       <item name="Wiki" href="https://wcm-io.atlassian.net/wiki/" />
       <item name="Mailing Lists" href="https://wcm.io/mailing-lists.html" />
-      <item name="Continuous Integration" href="https://travis-ci.org/wcm-io-devops" />
       <item name="Fork on GitHub" href="http://github.com/wcm-io-devops" />
     </menu>
     <menu name="Maven documentation" inherit="top" ref="reports"/>

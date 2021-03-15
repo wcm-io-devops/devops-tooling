@@ -2,4 +2,4 @@
 
 The wcm.io DevOps modules depend on the following system dependencies:
 
-* Oracle Java 8
+* Java 8 and Java 11
