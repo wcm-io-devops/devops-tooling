@@ -26,7 +26,7 @@
   <parent>
     <groupId>io.wcm.devops</groupId>
     <artifactId>io.wcm.devops.parent_toplevel</artifactId>
-    <version>1.2.5-SNAPSHOT</version>
+    <version>1.2.7-SNAPSHOT</version>
     <relativePath>../parent_toplevel/pom.xml</relativePath>
   </parent>
 
