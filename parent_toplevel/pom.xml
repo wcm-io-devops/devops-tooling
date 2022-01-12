@@ -25,13 +25,13 @@
   <parent>
     <groupId>io.wcm.maven</groupId>
     <artifactId>io.wcm.maven.global-parent</artifactId>
-    <version>40</version>
+    <version>42-SNAPSHOT</version>
     <relativePath />
   </parent>
 
   <groupId>io.wcm.devops</groupId>
   <artifactId>io.wcm.devops.parent_toplevel</artifactId>
-  <version>1.2.11-SNAPSHOT</version>
+  <version>1.3.0-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <name>Toplevel Parent</name>
@@ -84,6 +84,9 @@
     <site.deploy.id>ssh-wcm.io</site.deploy.id>
     <site.deploy.url>scm:git:https://github.com/wcm-io-devops/wcm-io-devops.github.io.git</site.deploy.url>
 
+    <!-- SonarCloud -->
+    <sonar.organization>wcm-io-devops</sonar.organization>
+    <sonar.host.url>https://sonarcloud.io</sonar.host.url>
   </properties>
 
   <dependencies>
