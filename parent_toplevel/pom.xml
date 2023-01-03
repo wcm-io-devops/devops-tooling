@@ -83,6 +83,9 @@
     <site.deploy.id>ssh-wcm.io</site.deploy.id>
     <site.deploy.url>scm:git:https://github.com/wcm-io-devops/wcm-io-devops.github.io.git</site.deploy.url>
 
+    <!-- Versions -->
+    <mockito.version>4.11.0</mockito.version>
+
     <!-- SonarCloud -->
     <sonar.organization>wcm-io-devops</sonar.organization>
     <sonar.host.url>https://sonarcloud.io</sonar.host.url>
@@ -151,12 +154,12 @@
       <dependency>
         <groupId>org.mockito</groupId>
         <artifactId>mockito-core</artifactId>
-        <version>4.11.0</version>
+        <version>${mockito.version}</version>
       </dependency>
       <dependency>
         <groupId>org.mockito</groupId>
         <artifactId>mockito-junit-jupiter</artifactId>
-        <version>4.11.0</version>
+        <version>${mockito.version}</version>
       </dependency>
       <!-- Import all JUnit 5 dependencies -->
       <dependency>
