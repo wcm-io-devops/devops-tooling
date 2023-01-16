@@ -84,7 +84,7 @@
     <site.deploy.url>scm:git:https://github.com/wcm-io-devops/wcm-io-devops.github.io.git</site.deploy.url>
 
     <!-- Versions -->
-    <mockito.version>4.11.0</mockito.version>
+    <mockito.version>5.0.0</mockito.version>
 
     <!-- SonarCloud -->
     <sonar.organization>wcm-io-devops</sonar.organization>
