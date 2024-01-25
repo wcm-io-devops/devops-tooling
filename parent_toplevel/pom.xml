@@ -25,13 +25,13 @@
   <parent>
     <groupId>io.wcm.maven</groupId>
     <artifactId>io.wcm.maven.global-parent</artifactId>
-    <version>54</version>
+    <version>56</version>
     <relativePath />
   </parent>
 
   <groupId>io.wcm.devops</groupId>
   <artifactId>io.wcm.devops.parent_toplevel</artifactId>
-  <version>1.4.2</version>
+  <version>1.4.4</version>
   <packaging>pom</packaging>
 
   <name>Toplevel Parent</name>
@@ -84,7 +84,7 @@
     <site.deploy.url>scm:git:https://github.com/wcm-io-devops/wcm-io-devops.github.io.git</site.deploy.url>
 
     <!-- Versions -->
-    <mockito.version>5.6.0</mockito.version>
+    <mockito.version>5.10.0</mockito.version>
 
     <!-- SonarCloud -->
     <sonar.organization>wcm-io-devops</sonar.organization>
@@ -165,7 +165,7 @@
       <dependency>
         <groupId>org.junit</groupId>
         <artifactId>junit-bom</artifactId>
-        <version>5.10.0</version>
+        <version>5.10.1</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
