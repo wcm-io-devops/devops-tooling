@@ -18,9 +18,6 @@ wcm.io DevOps is an Open Source project which provides tools for configuration m
 
 * [Ansible Automation for AEM](ansible-aem/)
 * [Jenkins Pipeline Library for CI/CD](https://github.com/wcm-io-devops/jenkins-pipeline-library)
-
-##### Cloud Manager
-
 * [pippo - CLI Tool for Cloud Manager](https://github.com/wcm-io-devops/pippo)
 
 ##### Maven
