@@ -25,7 +25,7 @@
 
     <release version="1.4.6" date="not released">
       <action type="update" dev="sseifert">
-        Update to global-parent 58.
+        Update to global-parent 59.
       </action>
       <action type="update" dev="sseifert">
         Update to reflow-maven-skin 1.2.0.
