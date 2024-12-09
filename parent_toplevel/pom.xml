@@ -25,13 +25,13 @@
   <parent>
     <groupId>io.wcm.maven</groupId>
     <artifactId>io.wcm.maven.global-parent</artifactId>
-    <version>56</version>
+    <version>60</version>
     <relativePath />
   </parent>
 
   <groupId>io.wcm.devops</groupId>
   <artifactId>io.wcm.devops.parent_toplevel</artifactId>
-  <version>1.4.4</version>
+  <version>1.4.6</version>
   <packaging>pom</packaging>
 
   <name>Toplevel Parent</name>
@@ -84,7 +84,7 @@
     <site.deploy.url>scm:git:https://github.com/wcm-io-devops/wcm-io-devops.github.io.git</site.deploy.url>
 
     <!-- Versions -->
-    <mockito.version>5.10.0</mockito.version>
+    <mockito.version>5.14.2</mockito.version>
 
     <!-- SonarCloud -->
     <sonar.organization>wcm-io-devops</sonar.organization>
@@ -149,7 +149,7 @@
       <dependency>
         <groupId>org.hamcrest</groupId>
         <artifactId>hamcrest-library</artifactId>
-        <version>2.2</version>
+        <version>3.0</version>
       </dependency>
       <dependency>
         <groupId>org.mockito</groupId>
@@ -165,7 +165,7 @@
       <dependency>
         <groupId>org.junit</groupId>
         <artifactId>junit-bom</artifactId>
-        <version>5.10.1</version>
+        <version>5.11.3</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
@@ -304,8 +304,19 @@
           </dependencies>
         </plugin>
 
-      </plugins>
+        <!-- Stick with old versions of site plugins because latest ones use Doxia 2.x, which is not compatible with our io.wcm.maven.skins.reflow-velocity-tools -->
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-site-plugin</artifactId>
+          <version>3.12.1</version>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-project-info-reports-plugin</artifactId>
+          <version>3.5.0</version>
+        </plugin>
 
+      </plugins>
     </pluginManagement>
   </build>
 
