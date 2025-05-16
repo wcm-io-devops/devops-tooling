@@ -31,6 +31,9 @@
       <action type="update" dev="sseifert">
         Update to global-parent 65.
       </action>
+      <action type="update" dev="sseifert">
+        Update testing dependencies.
+      </action>
     </release>
 
     <release version="2.0.0" date="2025-03-31">
