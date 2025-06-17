@@ -34,6 +34,9 @@
       <action type="update" dev="sseifert">
         Update testing dependencies.
       </action>
+      <action type="update" dev="sseifert">
+        Add org.junit.platform:junit-platform-launcher test dependency (for Eclipse infinitest plugin).
+      </action>
     </release>
 
     <release version="2.0.0" date="2025-03-31">
