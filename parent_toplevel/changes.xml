@@ -24,6 +24,21 @@
     xsi:schemaLocation="http://maven.apache.org/changes/2.0.0 https://maven.apache.org/xsd/changes-2.0.0.xsd">
   <body>
 
+    <release version="2.0.2" date="2025-06-18">
+      <action type="update" dev="sseifert">
+        Enable rendering of changes reports in HTML format again by reconfiguring maven-changes-plugin 3.0.0-M3.
+      </action>
+      <action type="update" dev="sseifert">
+        Update to global-parent 65.
+      </action>
+      <action type="update" dev="sseifert">
+        Update testing dependencies.
+      </action>
+      <action type="update" dev="sseifert">
+        Add org.junit.platform:junit-platform-launcher test dependency (for Eclipse infinitest plugin).
+      </action>
+    </release>
+
     <release version="2.0.0" date="2025-03-31">
       <action type="remove" dev="sseifert">
         Remove management of slf4j-api and slf4j-simple dependencies.
