@@ -25,13 +25,13 @@
   <parent>
     <groupId>io.wcm.maven</groupId>
     <artifactId>io.wcm.maven.global-parent</artifactId>
-    <version>66</version>
+    <version>70</version>
     <relativePath />
   </parent>
 
   <groupId>io.wcm.devops</groupId>
   <artifactId>io.wcm.devops.parent_toplevel</artifactId>
-  <version>2.0.4</version>
+  <version>2.1.0</version>
   <packaging>pom</packaging>
 
   <name>Toplevel Parent</name>
@@ -75,7 +75,7 @@
   <properties>
 
     <!-- Java version -->
-    <java.version>11</java.version>
+    <java.version>17</java.version>
 
     <!-- site settings -->
     <site.url.module.prefix>tooling/parent_toplevel</site.url.module.prefix>
@@ -84,7 +84,7 @@
     <site.deploy.url>scm:git:https://github.com/wcm-io-devops/wcm-io-devops.github.io.git</site.deploy.url>
 
     <!-- Versions -->
-    <mockito.version>5.19.0</mockito.version>
+    <mockito.version>5.20.0</mockito.version>
 
     <!-- SonarCloud -->
     <sonar.organization>wcm-io-devops</sonar.organization>
