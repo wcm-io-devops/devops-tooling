@@ -24,6 +24,15 @@
     xsi:schemaLocation="http://maven.apache.org/changes/2.0.0 https://maven.apache.org/xsd/changes-2.0.0.xsd">
   <body>
 
+    <release version="2.1.2" date="not released">
+      <action type="update" dev="sseifert">
+        Configure Mockito instrumentation for inline mocking.
+      </action>
+      <action type="update" dev="sseifert">
+        Update global-parent dependency to 71.
+      </action>
+    </release>
+
     <release version="2.1.0" date="2025-09-24">
       <action type="update" dev="sseifert">
         Switch minimum Java to Java 17 - both for build and compile target.
