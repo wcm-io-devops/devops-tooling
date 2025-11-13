@@ -26,10 +26,7 @@
 
     <release version="2.1.2" date="not released">
       <action type="update" dev="sseifert">
-        Configure Mockito instrumentation for inline mocking.
-      </action>
-      <action type="update" dev="sseifert">
-        Update global-parent dependency to 71.
+        Update global-parent dependency to 72.
       </action>
     </release>
 
