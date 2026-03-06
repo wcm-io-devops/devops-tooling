@@ -25,7 +25,7 @@
   <body>
 
     <release version="2.2.0" date="not released">
-      <action type="add" dev="sseifert" issue="84">
+      <action type="add" dev="sseifert" issue="92">
         Apply automatic Spotless formatting for Java and POM files.
       </action>
       <action type="update" dev="sseifert">
