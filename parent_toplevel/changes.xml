@@ -34,6 +34,9 @@
       <action type="update" dev="sseifert">
         Update testing dependencies.
       </action>
+      <action type="remove" dev="sseifert">
+        Remove license-maven-plugin as it is not longer required with spotless plugin.
+      </action>
     </release>
 
     <release version="2.1.2" date="2025-11-17">
