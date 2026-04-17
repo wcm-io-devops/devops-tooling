@@ -255,7 +255,7 @@
           <dependency>
             <groupId>io.wcm.maven</groupId>
             <artifactId>io.wcm.maven.global-build-tools</artifactId>
-            <version>36-SNAPSHOT</version>
+            <version>36</version>
           </dependency>
         </dependencies>
         <executions>
