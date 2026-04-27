@@ -24,7 +24,7 @@
   <parent>
     <groupId>io.wcm.maven</groupId>
     <artifactId>io.wcm.maven.global-parent</artifactId>
-    <version>76</version>
+    <version>80-SNAPSHOT</version>
     <relativePath />
   </parent>
 
@@ -74,7 +74,7 @@
   <properties>
 
     <!-- Java version -->
-    <java.version>17</java.version>
+    <java.version>21</java.version>
 
     <!-- site settings -->
     <site.url.module.prefix>tooling/parent_toplevel</site.url.module.prefix>

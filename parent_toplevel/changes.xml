@@ -25,11 +25,14 @@
   <body>
 
     <release version="2.2.0" date="not released">
+      <action type="update" dev="sseifert">
+        Switch minimum Java to Java 21 - both for build and compile target.
+      </action>
       <action type="add" dev="sseifert" issue="92">
         Apply automatic Spotless formatting for Java and POM files.
       </action>
       <action type="update" dev="sseifert">
-        Update global-parent dependency to 76.
+        Update global-parent dependency to 80.
       </action>
       <action type="update" dev="sseifert">
         Update testing dependencies.
