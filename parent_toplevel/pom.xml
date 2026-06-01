@@ -18,20 +18,19 @@
   limitations under the License.
   #L%
   -->
-
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
     <groupId>io.wcm.maven</groupId>
     <artifactId>io.wcm.maven.global-parent</artifactId>
-    <version>73</version>
+    <version>80</version>
     <relativePath />
   </parent>
 
   <groupId>io.wcm.devops</groupId>
   <artifactId>io.wcm.devops.parent_toplevel</artifactId>
-  <version>2.1.2</version>
+  <version>2.2.0</version>
   <packaging>pom</packaging>
 
   <name>Toplevel Parent</name>
@@ -41,8 +40,8 @@
   <scm>
     <connection>scm:git:https://github.com/wcm-io-devops/devops-tooling.git</connection>
     <developerConnection>scm:git:https://github.com/wcm-io-devops/devops-tooling.git</developerConnection>
-    <url>https://github.com/wcm-io-devops/devops-tooling</url>
     <tag>HEAD</tag>
+    <url>https://github.com/wcm-io-devops/devops-tooling</url>
   </scm>
 
   <inceptionYear>2015</inceptionYear>
@@ -75,7 +74,7 @@
   <properties>
 
     <!-- Java version -->
-    <java.version>17</java.version>
+    <java.version>21</java.version>
 
     <!-- site settings -->
     <site.url.module.prefix>tooling/parent_toplevel</site.url.module.prefix>
@@ -84,7 +83,7 @@
     <site.deploy.url>scm:git:https://github.com/wcm-io-devops/wcm-io-devops.github.io.git</site.deploy.url>
 
     <!-- Versions -->
-    <mockito.version>5.20.0</mockito.version>
+    <mockito.version>5.23.0</mockito.version>
 
     <!-- SonarCloud -->
     <sonar.organization>wcm-io-devops</sonar.organization>
@@ -158,7 +157,7 @@
       <dependency>
         <groupId>org.junit</groupId>
         <artifactId>junit-bom</artifactId>
-        <version>6.0.1</version>
+        <version>6.1.0</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
@@ -179,20 +178,6 @@
     </extensions>
     <plugins>
 
-      <!-- license check -->
-      <plugin>
-        <groupId>org.codehaus.mojo</groupId>
-        <artifactId>license-maven-plugin</artifactId>
-        <executions>
-          <execution>
-            <phase>validate</phase>
-            <goals>
-              <goal>check-file-header</goal>
-            </goals>
-          </execution>
-        </executions>
-      </plugin>
-
       <!-- GitFlow settings only for this POM -->
       <plugin>
         <groupId>com.amashchenko.maven.plugin</groupId>
@@ -211,6 +196,11 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-site-plugin</artifactId>
+        <configuration>
+          <generateReports>true</generateReports>
+          <inputEncoding>UTF-8</inputEncoding>
+          <outputEncoding>UTF-8</outputEncoding>
+        </configuration>
         <dependencies>
           <dependency>
             <groupId>io.wcm.maven.skins</groupId>
@@ -218,17 +208,62 @@
             <version>1.1.0</version>
           </dependency>
         </dependencies>
-        <configuration>
-          <generateReports>true</generateReports>
-          <inputEncoding>UTF-8</inputEncoding>
-          <outputEncoding>UTF-8</outputEncoding>
-        </configuration>
         <executions>
           <execution>
             <id>attach-descriptor</id>
             <goals>
               <goal>attach-descriptor</goal>
             </goals>
+          </execution>
+        </executions>
+      </plugin>
+
+      <plugin>
+        <groupId>com.diffplug.spotless</groupId>
+        <artifactId>spotless-maven-plugin</artifactId>
+        <version>3.6.0</version>
+        <configuration>
+          <java>
+            <eclipse>
+              <file>global-build-tools/eclipse/java-formatter.xml</file>
+            </eclipse>
+            <removeUnusedImports />
+            <licenseHeader>
+              <file>global-build-tools/spotless/header-java.txt</file>
+            </licenseHeader>
+          </java>
+          <!-- accept all endings to support validations on top of source archives -->
+          <lineEndings>PRESERVE</lineEndings>
+          <pom>
+            <licenseHeader>
+              <file>global-build-tools/spotless/header-xml.txt</file>
+              <delimiter>&lt;project</delimiter>
+            </licenseHeader>
+            <sortPom>
+              <sortOrderFile>global-build-tools/spotless/sortpom.xml</sortOrderFile>
+              <nrOfIndentSpace>2</nrOfIndentSpace>
+              <expandEmptyElements>false</expandEmptyElements>
+              <!-- https://issues.apache.org/jira/browse/MRELEASE-1111 -->
+              <spaceBeforeCloseEmptyElement>true</spaceBeforeCloseEmptyElement>
+            </sortPom>
+          </pom>
+          <upToDateChecking>
+            <enabled>true</enabled>
+          </upToDateChecking>
+        </configuration>
+        <dependencies>
+          <dependency>
+            <groupId>io.wcm.maven</groupId>
+            <artifactId>io.wcm.maven.global-build-tools</artifactId>
+            <version>36</version>
+          </dependency>
+        </dependencies>
+        <executions>
+          <execution>
+            <goals>
+              <goal>${spotless.action}</goal>
+            </goals>
+            <phase>process-sources</phase>
           </execution>
         </executions>
       </plugin>
@@ -257,10 +292,10 @@
         <executions>
           <execution>
             <id>generate-file</id>
-            <phase>site</phase>
             <goals>
               <goal>write</goal>
             </goals>
+            <phase>site</phase>
           </execution>
         </executions>
       </plugin>
@@ -269,20 +304,6 @@
 
     <pluginManagement>
       <plugins>
-
-        <plugin>
-          <groupId>org.codehaus.mojo</groupId>
-          <artifactId>license-maven-plugin</artifactId>
-          <configuration>
-            <licenseName>apache_v2</licenseName>
-            <addJavaLicenseAfterPackage>false</addJavaLicenseAfterPackage>
-            <projectName>wcm.io</projectName>
-            <excludes>
-              <exclude>**/*.json</exclude>
-              <exclude>**/*.html</exclude>
-            </excludes>
-          </configuration>
-        </plugin>
 
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
@@ -375,6 +396,7 @@
   </reporting>
 
   <profiles>
+
     <!-- profile used for building releases and deployment to sonatype/maven central -->
     <profile>
       <id>release-profile</id>
@@ -394,10 +416,10 @@
             <executions>
               <execution>
                 <id>sign-artifacts</id>
-                <phase>verify</phase>
                 <goals>
                   <goal>sign</goal>
                 </goals>
+                <phase>verify</phase>
               </execution>
             </executions>
           </plugin>
@@ -405,8 +427,8 @@
           <plugin>
             <groupId>org.sonatype.central</groupId>
             <artifactId>central-publishing-maven-plugin</artifactId>
-            <inherited>true</inherited>
             <extensions>true</extensions>
+            <inherited>true</inherited>
             <configuration>
               <publishingServerId>sonatype-central</publishingServerId>
               <deploymentName>${project.artifactId} ${project.version}</deploymentName>
@@ -415,6 +437,32 @@
         </plugins>
       </build>
     </profile>
+
+    <!-- only check formatting with spotless by default in CI builds -->
+    <profile>
+      <id>spotless-format-check</id>
+      <activation>
+        <property>
+          <name>env.CI</name>
+        </property>
+      </activation>
+      <properties>
+        <spotless.action>check</spotless.action>
+      </properties>
+    </profile>
+    <!-- reformat during build with spotless with -Pformat -->
+    <profile>
+      <id>format</id>
+      <activation>
+        <property>
+          <name>!env.CI</name>
+        </property>
+      </activation>
+      <properties>
+        <spotless.action>apply</spotless.action>
+      </properties>
+    </profile>
+
   </profiles>
 
   <distributionManagement>
