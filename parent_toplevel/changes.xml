@@ -24,6 +24,15 @@
     xsi:schemaLocation="http://maven.apache.org/changes/2.0.0 https://maven.apache.org/xsd/changes-2.0.0.xsd">
   <body>
 
+    <release version="2.2.2" date="not released">
+      <action type="update" dev="sseifert">
+        Update global-parent dependency to 83.
+      </action>
+      <action type="update" dev="sseifert">
+        Update testing dependencies.
+      </action>
+    </release>
+
     <release version="2.2.0" date="2026-06-01">
       <action type="update" dev="sseifert">
         Switch minimum Java to Java 21 - both for build and compile target.
